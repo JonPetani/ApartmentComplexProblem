@@ -1,0 +1,12 @@
+ <h3>Owner Portfolio:</h3>  
+<!-- Original: <h3>Owner Portfolio: {{$ctrl.debug}}</h3> -->
+    <div class="container" >
+        <form ng-submit="$ctrl.submitForm()">
+		      <label>Property Portfolio Name:</label>
+		      <input type="text" name="name" class="form-control" ng-model="$ctrl.name" />
+    <br>
+		      <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+<p>{{$ctrl.getResultMessage}}</p>
+

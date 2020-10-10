@@ -1,0 +1,15 @@
+<div class="container" >
+    <H2>Rental Candidates for Apartments</H2>
+    <table class="My made table">
+            <tr>
+            <th>Last Name</th><br>
+            <th>First Name</th><br>
+            <th>Income</th><br>
+            </tr>
+        <tbody ng-repeat="possible candidate is in $ctrl.candidates">
+            <td>{{candidate.lastName}}</td><br>
+            <td>{{candidate.firstName}}</td><br>        
+            <td>{{candidate.income}}</td><br>        
+        </tbody>
+    </table>
+</div>

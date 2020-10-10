@@ -1,0 +1,22 @@
+<div class="container" >
+    <link rel="stylesheet" href="css-data/investor.css"/>
+    <div class="column2">
+        <u><h1>New Investor:</h1></u>
+              <form ng-submit="$ctrl.submitForm()">
+		      <label>Name:</label>
+		      <input type="text" name="name" class="form-control" ng-model="$ctrl.name"/>
+		      <label>Tax ID:</label>
+		      <input type="text" name="taxid" class="form-control" ng-model="$ctrl.taxid"/>
+		      <label>Address:</label>
+		      <input type="text" name="address" class="form-control" ng-model="$ctrl.address"/><br>     
+		      <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    <p>{{$ctrl.getResultMessage}}</p>
+    </div>
+
+    <div class="column1">
+              <img src = "photos/Apartments1-3.jpg" alt ="LA" style="float:right;width:720px;height:340px;">
+              <img src = "photos/Apartments1-4.jpg" alt ="MA" style="float:right;width:720px;height:290px;">
+    </div>
+</div>
+

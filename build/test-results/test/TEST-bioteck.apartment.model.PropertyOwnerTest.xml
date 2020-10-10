@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="bioteck.apartment.model.PropertyOwnerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-12-20T14:49:07" hostname="jpetani-VirtualBox" time="0.003">
+  <properties/>
+  <testcase name="testComparison()" classname="bioteck.apartment.model.PropertyOwnerTest" time="0.0"/>
+  <testcase name="testEquals()" classname="bioteck.apartment.model.PropertyOwnerTest" time="0.001"/>
+  <testcase name="createTest()" classname="bioteck.apartment.model.PropertyOwnerTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

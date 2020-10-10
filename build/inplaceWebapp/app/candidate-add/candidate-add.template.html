@@ -1,0 +1,40 @@
+<div class="container" >
+    <link rel="stylesheet" href="css-data/candidate.css"/> 
+    <div class="column2">
+            <u><h1>Application Form for Candidates:</h1></u>
+                <form ng-submit="$ctrl.submitForm()">
+		        <label>First Name:</label>
+		        <input type="text" name="firstname" class="form-control" ng-model="$ctrl.firstname"/><br>
+		        <label>Last Name:</label>
+		        <input type="text" name="lastname" class="form-control" ng-model="$ctrl.lastname"/><br>
+		        <label>Address:</label> 
+                <input type="text" name="address" class="form-control" ng-model="$ctrl.address"/><br>
+         <!--       <label>Phone Number:</label>
+                <input type="text" name="phoneNum" class="form-control" ng-mode="$ctrl.phonenumber"/><br> -->
+                <label>Social Security ID:</label>
+                <input type="text" name="ssid" class="form-control" ng-model="$ctrl.ssid"/><br>
+		        <label>Income:</label>
+		        <input type="text" name="income" class="form-control" ng-model="$ctrl.income"/><br>                                                
+
+                <label>Select Apartment Complex:</label>
+
+                <form>
+                <select>
+                  <option value="Select">Select</option>
+                  <option value="High Hills Apartments">High Hills Apartments - Boston</option>
+                  <option value="Waterfell Apartments">Waterfell Apartments - Los Angeles</option>
+                </select>
+            
+                <br><br><button type="submit" class="btn btn-primary"><input type="reset" style="background-color:black; color:black;">Submit</button>
+               </form>
+
+                </form>
+                <p>{{$ctrl.getResultMessage}}</p>
+                </div><br><br>
+
+            <div class="column1">
+            <img src = "photos/Apartments1-3.jpg" alt ="LA" style="float:right;width:720px;height:340px;">
+            <img src = "photos/Apartments1-4.jpg" alt ="MA" style="float:right;width:720px;height:290px;">
+            </div>
+        <br>
+</div>

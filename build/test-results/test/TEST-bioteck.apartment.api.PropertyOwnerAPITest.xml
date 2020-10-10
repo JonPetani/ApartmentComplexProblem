@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="bioteck.apartment.api.PropertyOwnerAPITest" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-12-20T14:49:01" hostname="jpetani-VirtualBox" time="0.997">
+  <properties/>
+  <testcase name="queryTest()" classname="bioteck.apartment.api.PropertyOwnerAPITest" time="0.238"/>
+  <testcase name="removePropertyOwnerTest()" classname="bioteck.apartment.api.PropertyOwnerAPITest" time="0.579"/>
+  <testcase name="addPropertyOwnerTest()" classname="bioteck.apartment.api.PropertyOwnerAPITest" time="0.169"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,18 @@
+<div class="container">
+<link rel="stylesheet" href="css-data/financial.css"/> 
+    <u><h2>Financial Statement:</h2></u>
+        <select ng-model="propertyOwnerId" ng-change="$ctrl.getPropertyOwner(propertyOwnerId)" >
+            <option value="">Select</option>
+            <option ng-repeat="owner in $ctrl.propertyOwners"
+                    value="{{owner.id}}">{{owner.name}}</option>
+        </select>
+</div>
+
+    <br><div class="container" ng-show="$ctrl.showPropertyOwner">
+        Id: {{$ctrl.propertyOwner.id}} <br />
+        Name: {{$ctrl.propertyOwner.name}} <br />
+        Tax ID: {{$ctrl.propertyOwner.taxID}} <br />    
+        Address: {{$ctrl.propertyOwner.address}} <br />
+        <property-portfolio-list add-portfolio="$ctrl.addedPortfolio"></property-portfolio-list>
+        <property-portfolio-add property-owner="$ctrl.propertyOwner" bind="$ctrl.addedPortfolio"></property-portfolio-add>    
+    </div>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="bioteck.apartment.api.PropertyPortfolioAPITest" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-12-20T14:49:02" hostname="jpetani-VirtualBox" time="1.563">
+  <properties/>
+  <testcase name="queryTest()" classname="bioteck.apartment.api.PropertyPortfolioAPITest" time="0.322"/>
+  <testcase name="addPropertyPortfolioTest()" classname="bioteck.apartment.api.PropertyPortfolioAPITest" time="0.667"/>
+  <testcase name="removePropertyPortfolioTest()" classname="bioteck.apartment.api.PropertyPortfolioAPITest" time="0.553"/>
+  <system-out><![CDATA[Hibernate: insert into PropertyOwner (Address, Name, TaxID, id) values (?, ?, ?, ?)
+Hibernate: insert into PropertyOwner (Address, Name, TaxID, id) values (?, ?, ?, ?)
+]]></system-out>
+  <system-err><![CDATA[Dec 20, 2018 9:49:02 AM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
+WARN: SQL Error: 1062, SQLState: 23000
+Dec 20, 2018 9:49:02 AM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
+ERROR: Duplicate entry 'Charlie Martel-00-10101011' for key 'UK_m8ah6cobt4mspby1y2y9jv4mb'
+Dec 20, 2018 9:49:02 AM org.hibernate.internal.ExceptionMapperStandardImpl mapManagedFlushFailure
+ERROR: HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+Dec 20, 2018 9:49:03 AM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
+WARN: SQL Error: 1062, SQLState: 23000
+Dec 20, 2018 9:49:03 AM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
+ERROR: Duplicate entry 'Charlie Martel-00-10101011' for key 'UK_m8ah6cobt4mspby1y2y9jv4mb'
+Dec 20, 2018 9:49:03 AM org.hibernate.internal.ExceptionMapperStandardImpl mapManagedFlushFailure
+ERROR: HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+]]></system-err>
+</testsuite>

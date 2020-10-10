@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="bioteck.apartment.api.CandidateAPITest" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-12-20T14:48:59" hostname="jpetani-VirtualBox" time="1.172">
+  <properties/>
+  <testcase name="queryTest()" classname="bioteck.apartment.api.CandidateAPITest" time="0.249"/>
+  <testcase name="addCandidateTest()" classname="bioteck.apartment.api.CandidateAPITest" time="0.495"/>
+  <testcase name="removeCandidateTest()" classname="bioteck.apartment.api.CandidateAPITest" time="0.418"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

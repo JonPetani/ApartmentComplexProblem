@@ -1,0 +1,14 @@
+<form action="{{}}">
+	 <input list="candidateDL" name="candidateBrowser">
+	 <candidate-list></candidate-list>
+	 <input type="submit" ng-click="$ctrl.getCandidate()">
+</form>
+<div ng-show="$ctrl.showCandidate">
+    Id: {{candidate.id}} <br />
+    Last Name: {{candidate.lastName}} <br />
+    First Name: {{candidate.firstName}} <br />    
+    Phone Number: {{candidate.phonenumber}} <br />    
+    Address: {{candidate.address}} <br />
+    Income: {{candidate.income}} <br />        
+</div>
+<p>{{$ctrl.getResultMessage}}</p>

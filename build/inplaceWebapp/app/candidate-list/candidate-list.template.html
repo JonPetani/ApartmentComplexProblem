@@ -1,0 +1,67 @@
+<div class="container" >
+    <link rel="stylesheet" href="css-data/stats.css"/> 
+    <link rel="stylesheet" href="css-data/stats-extra.css"/>
+    <u><H2>Current Rental Candidates for Apartments:</H2></u>
+    <table class="My made table">
+
+            <tr>
+            <th>Last Name</th>
+            <th>First Name</th>
+            <th>Address</th>
+        <!--    <th>Phone Number</th> -->
+            <th>Social Security ID</th>
+            <th>Income</th>
+            </tr>
+
+        <tbody ng-repeat="candidate in $ctrl.candidates">
+            <td>{{candidate.lname}}</td>
+            <td>{{candidate.fname}}</td>     
+            <td>{{candidate.address}}</td>
+       <!--     <td>{{candidate.phoneNum}}</td>  -->
+            <td>{{candidate.socialSecurity}}</td> 
+            <td>{{candidate.salary}}</td>
+        </tbody>
+    </table>
+
+    <br>
+    <br>
+    <hr>
+
+    <div align="center"> 
+    <h2>- Apartment Descriptions -</h2>
+    </div>
+
+    <div class="left-column">
+       
+        <h3>Apartment Complex 1 - High Hills Apartments:</h3><br>
+            <p>* Apartment type: Luxury
+            <p>* Location: 45 Acer Drive, Los Angeles, California
+            <p>* 2 bedroom, 1 bathroom
+            <p>* Kitchen: Yes
+            <p>* 900 Sq Ft
+            <p>* Parking Garage in lower level
+            <p>* Total number of apartment units: 30
+            <p>* Available units: Yes
+            <p>* Pool
+            <p>* Stove
+            <p>* Wifi Connection
+    </div>
+
+    <div class="right-column">
+        <h3>Apartment Complex 2 - Waterfell Apartments:</h3><br>
+            <p>* Apartment type: Luxury
+            <p>* Location: 12 Back Street, Boston, Massachussetts
+            <p>* 3 bedroom, 2 bathrooms
+            <p>* Kitchen: Yes
+            <p>* 800 Sq Ft
+            <p>* Street Parking
+            <p>* Total number of apartment units: 50
+            <p>* Available units: Yes        
+            <p>* Balcony
+            <p>* Jacuzzi
+            <p>* Stove
+            <p>* Fireplace
+    </div>
+        <!--    <h1>{{$ctrl.getResultMessage}}</h1>
+                <h3>{{$ctrl.candidates}}</h3>   -->
+</div>

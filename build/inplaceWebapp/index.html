@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang = "en" ng-app="MyPmapp"> 
+<script>
+// define an angular application with 'ng-app' directive 
+</script> 
+    
+<head>
+         <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"> // import angularJS library
+         </script>
+	     <script src="js/MyPmapp.js"></script>
+        
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+         <title>Bioteck - Apartments</title>
+<link rel="stylesheet" href="app/css-data/data.css"/>
+   <!-- <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/> -->      
+    </head>
+
+    <body>
+    <div class="container" >
+        <body ng-app="propertyManagementApp" >
+        <div ng-controller="AppNavCtrl" > <!-- Define an angularJS controller to control the angularJS application -->
+		    <nav class="navbar navbar-default" id="{{active}}" >
+            <div class="container-fluid" ">
+            <div class="navbar-header">
+            <a class="navbar-brand"  href ="#">Blue Team Property Management</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="candidate"><a href="#!candidateadd" ng-click="active='candidate'">Application Form</a></li>
+                <li class="business"><a href="#!property-owners" ng-click="active='business'">Apartments</a></li>
+                <li class="management"><a href="#!candidates" ng-click="active='management'">Statistics</a></li>
+                <li class="investors"><a href="#!property-owneradd" ng-click="active='investors'">Investors</a></li>                                 
+            </ul>                    
+            </div>
+            </nav>
+
+            <div class="view-container">
+            <div ng-view class="view-frame"></div>
+            </div>
+        </div>
+
+      <div class="row">
+      <div ng-controller="postCandidatesController" class="col-md-3"> 
+        <div class="column1">
+            <img src = "app/the-beverly-hills.jpg" alt ="LA" style="float:right;width:720px;height:340px;">
+            <img src = "app/MA.jpg" alt ="MA" style="float:right;width:720px;height:290px;">
+            <img src = "app/LosAngeles.jpg" alt ="LA2" style="float:right;width:720px;height:370px;">
+      </div>
+
+      <div class="vl"></div>    <!-- this is the vertical line -->
+
+
+
+
+      <div class="column2">
+      <div ng-controller="postCandidatesController" class="col-md-3"> 
+      <form name="candidateForm" ng-submit="submitForm()">
+            <p><bold><u>Bioteck Apartments - Candidate Application Form</u></bold></p>
+            <label>First Name:</label>
+            <span style ="padding-left:57px;">
+            <input type="text" name="firstname" class="form-control" ng-model="firstname"/><br><br>
+            <label>Last Name:</label>
+            <span style ="padding-left:59px;">
+            <input type="text" name="lastname" class="form-control" ng-model="lastname"/><br><br>
+            <label>Phone Number:</label>
+            <span style ="padding-left:27px;">
+            <input type="text" name="phonenumber" class="form-control" ng-model="phonenumber"/><br><br>
+            <label>Address:</label>
+            <span style ="padding-left:82px;">
+            <input type="text" name="address" class="form-control" ng-model="address"/><br><br>
+            <label>Social Security ID:</label>
+            <input type="text" name="ssid" class="form-control" ng-model="ssid"/><br><br> 
+            <label>Income:</label>
+            <span style ="padding-left:87px;">
+            <input type="text" name="income" class="form-control" ng-model="income"/><br><br>
+            <span style ="padding-left:18px;">
+            <button type="submit" onclick="myFunction()">Submit</button> 
+    </form>
+         <p>{{postResultMessage}}</p>
+            </div>
+
+
+            <script>
+            function myFunction() {
+                var txt;
+                if (confirm("Submission confirmation")) {
+                    txt = "You pressed OK!";
+                } else {
+                    txt = "You pressed Cancel!";
+                }
+                document.getElementById("demo").innerHTML = txt;
+            }
+            </script>
+    </div>
+    </body>
+</html>   

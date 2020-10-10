@@ -1,0 +1,21 @@
+<div class="container" >
+        <h1>Application Form for Candidates</h1>
+            <form ng-submit="$ctrl.submitForm()">
+		    <label>First Name:</label>
+		    <input type="text" name="firstname" class="form-control" ng-model="$ctrl.firstname"/><br>
+		    <label>Last Name:</label>
+		    <input type="text" name="lastname" class="form-control" ng-model="$ctrl.lastname"/><br>
+		    <label>Phone Number:</label>
+		    <input type="text" name="phonenumber" class="form-control" ng-model="$ctrl.phonenumber"/><br>
+		    <label>Address:</label>
+		    <input type="text" name="address" class="form-control" ng-model="$ctrl.address"/><br>
+            <label>Social Security ID:</label>
+            <input type="text" name="address" class="form-control" ng-model="$ctrl.ssid"/><br>
+		    <label>Income:</label>
+		    <input type="text" name="income" class="form-control" ng-model="$ctrl.income"/><br>                                                
+		    <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+     </div>
+<p>
+    {{$ctrl.getResultMessage}}
+</p>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="bioteck.apartment.model.PropertyPortfolioTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2018-12-20T14:49:07" hostname="jpetani-VirtualBox" time="0.056">
+  <properties/>
+  <testcase name="testComparison()" classname="bioteck.apartment.model.PropertyPortfolioTest" time="0.002"/>
+  <testcase name="testCost()" classname="bioteck.apartment.model.PropertyPortfolioTest" time="0.002"/>
+  <testcase name="testCreate()" classname="bioteck.apartment.model.PropertyPortfolioTest" time="0.002"/>
+  <testcase name="testEquals()" classname="bioteck.apartment.model.PropertyPortfolioTest" time="0.002"/>
+  <testcase name="testAddProperty()" classname="bioteck.apartment.model.PropertyPortfolioTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

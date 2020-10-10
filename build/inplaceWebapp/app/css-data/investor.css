@@ -1,0 +1,71 @@
+body {background-color: #FFFFE0;}
+
+            .vl {
+                border-left: 4px solid;
+                height: 992px;
+                position: absolute;
+                left: 50%;
+                margin-left: -68px;
+                margin-top: 110px;
+                top: 0;
+                padding: 10px;
+                border-collapse: collapse;
+                margin-bottom: 10px;
+            }
+            .column1 {
+                float: right;
+                width: 40%;
+                padding: 10px; 
+                margin-top: -10px;
+                border-collapse: collapse;
+                border-width: 100%;
+            }
+            .column2 {
+                float: left;
+                width: 33%;
+                padding: 10px;
+                height: 380px; 
+                background-color: #DCDCDC;
+                border: 5px solid #696969;
+                margin-top: 8px;
+                margin: 5px;
+            }
+            .column3 {
+                width: 43%;
+                padding: 10px;
+                height: 300px;
+                margin-top: 190px; 
+                background-color: #DCDCDC;
+                border: 5px solid black;
+            }
+            img {
+                border: solid black;
+            }
+            p {
+                font-size: 16px;
+                font-family: Serif;  
+                text-decoration: underline;
+            }  
+            label {
+                font-size: 17px;
+                font-family: Serif;
+                padding-left: 20px;    
+            }  
+            button {
+                background-color: #3B64FF;
+                color: white; 
+            }
+
+            .navBardemoBasicUsage md-content .ext-content {
+              padding: 50px;
+              margin: 20px;
+              background-color: #FFF2E0;
+            }
+
+            a {
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                font-size: 14px;
+            }

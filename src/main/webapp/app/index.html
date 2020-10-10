@@ -1,0 +1,48 @@
+<html lang="en" >
+    <head>
+        <style>
+        </style>
+
+	     <title>Bioteck - Properties</title>
+	     <meta charset="utf-8">
+	     <meta name="viewport" content="width=device-width, initial-scale=1" />
+	     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/propertyManagement.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-route.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-animate.js"></script>
+
+       
+    </head>
+    <body ng-app="propertyManagementApp" >
+        <div ng-controller="AppNavCtrl" >
+		      <nav class="navbar navbar-default" id="{{active}}" >
+                <div class="container-fluid" ">
+                    <div class="navbar-header">
+                        <a class="navbar-brand"  href ="#">Blue Team Property Management</a>
+
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="candidate" ><a href="#!candidateadd" ng-click="active='candidate'">Application Form</a></li>
+                        <li class="business"><a href="#!property-owners" ng-click="active='business'">Apartments</a></li>
+                        <li class="management"><a href="#!candidates" ng-click="active='management'">Statistics</a></li>
+                        <li class="investors"><a href="#!property-owneradd" ng-click="active='investors'">Investors</a></li>                                
+                        
+                    </ul>                    
+
+                </div>
+            </nav>
+            <div class="view-container">
+                <div ng-view class="view-frame"></div>
+            </div>
+        </div>
+    <img src = "9200_Wilshire_Oct_2017_APPROVED.0.jpeg" style = "width: 500px; height: 300px; float: right; ">
+<img src = "113386332.jpg" style = "width: 500px; height: 300px; float: left; ">
+<img src = "Beverly_Hills_Sign,_LA,_CA,_jjron_21.03.2012.jpg" style = "width: 266px; height: 300px; float: center; ">
+<img src = "Boston-Hero2-1400x500.jpg" style = "width: 500px; height: 300px; float: left; ">
+ <img src = "1489407104-back-bay-pads-real-estate-services-boston.jpg" style = "width: 500px; height: 300px; float: right; ">
+<img src = "LA-Pop-Art-Girl's-Word-Art-Long-Sleeve---BOSTON-NEIGHBORHOODS---Kelly,-Medium.jpg" style = "width: 266px; height: 300px; float: center; ">
+
+
+    </body>
+</html>

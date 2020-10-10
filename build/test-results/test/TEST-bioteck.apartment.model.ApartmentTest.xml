@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="bioteck.apartment.model.ApartmentTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-12-20T14:49:07" hostname="jpetani-VirtualBox" time="0.012">
+  <properties/>
+  <testcase name="testCreate()" classname="bioteck.apartment.model.ApartmentTest" time="0.012"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
